@@ -21,11 +21,13 @@ function generatePassword() {
   function characterNum() {
     // Prompt for PW length
     var passwordLength = window.prompt(inputPrompt);
+    console.log(passwordLength);
     
     // Loop if not between 8-128
     while (passwordLength < 8 || passwordLength > 128) {
       alert("ERROR: Password must be between 8 and 128 characters. " + tryAgain);
       var passwordLength = window.prompt(inputPrompt);
+      console.log(passwordLength);
     } 
     
     // Confirmation for Password Length
@@ -36,6 +38,7 @@ function generatePassword() {
   function characterType() {
     // Prompt for Uppercase Characters
     var upperCase = confirm(upperPrompt);
+    console.log(upperCase);
     
     // Confirmation Alert for Uppercase Characters
     if (upperCase) {
@@ -46,6 +49,7 @@ function generatePassword() {
     
     // Prompt for Lowercase Characters
     var lowerCase = confirm(lowerPrompt);
+    console.log(lowerCase);
 
     // Confirmation Alert for Lowercase Characters
     if (lowerCase) {
@@ -57,6 +61,7 @@ function generatePassword() {
 
     // Prompt for Numeric Characters
     var numericChar = confirm(numericPrompt);
+    console.log(numericChar);
     
     // Confirmation Alert for Numeric Characters
     if (numericChar) {
@@ -67,6 +72,7 @@ function generatePassword() {
 
     // Prompt for Special Characters
     var specialChar = confirm(specialPrompt);
+    console.log(specialChar);
 
     // Confirmation Alert for Special Characters
     if (specialChar) {
