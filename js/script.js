@@ -22,7 +22,7 @@ function generatePassword() {
   while (passwordLength < 8 || passwordLength > 128) {
     alert("ERROR: Password must be between 8 and 128 characters. " + tryAgain);
     var passwordLength = window.prompt(inputPrompt);
-    console.log(passwordLength);
+    console.log("Password length will be: " + passwordLength);
   } 
     
   // Confirmation for Password Length
@@ -30,7 +30,7 @@ function generatePassword() {
   
   // Prompt for Uppercase Characters
   var upperCase = confirm(upperPrompt);
-  console.log(upperCase);
+  console.log("Include uppercase characters? " + upperCase);
       
   // Confirmation Alert for Uppercase Characters
   if (upperCase) {
@@ -41,7 +41,7 @@ function generatePassword() {
       
   // Prompt for Lowercase Characters
   var lowerCase = confirm(lowerPrompt);
-  console.log(lowerCase);
+  console.log("Include lowercase characters? " + lowerCase);
 
   // Confirmation Alert for Lowercase Characters
   if (lowerCase) {
@@ -52,7 +52,7 @@ function generatePassword() {
 
   // Prompt for Numeric Characters
   var numericVal = confirm(numericPrompt);
-  console.log(numericVal);
+  console.log("Include numeric characters? " + numericVal);
       
   // Confirmation Alert for Numeric Characters
   if (numericVal) {
@@ -63,7 +63,7 @@ function generatePassword() {
 
   // Prompt for Special Characters
   var specialVal = confirm(specialPrompt);
-  console.log(specialVal);
+  console.log("Include special characters? " + specialVal);
 
   // Confirmation Alert for Special Characters
   if (specialVal) {
@@ -71,8 +71,6 @@ function generatePassword() {
   } else {
     alert("Password will not include special characters.");
   } 
-
-  console.log(upperCase, lowerCase, numericVal, specialVal);
   
   // Checks to make sure at least one character type is selected and provides error if no characters are selected
   if (!upperCase && !lowerCase && !numericVal && !specialVal) {
