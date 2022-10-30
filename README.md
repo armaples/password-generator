@@ -8,6 +8,7 @@
 
 - [Installation](#installation)
 - [Application Preview](#application-preview)
+    - [Prompts](#prompts)
 - [Languages Used](#languages-used)
 - [Important Links](#important-links)
 - [Credits](#credits)
@@ -17,13 +18,45 @@
 ## Installation
 
 - Navigate to the 'clone' button on the github repository and use either SSH or HTTPS link to clone the repository to your computer.
-![Screenshot](#)
+![Screenshot](./assets/intallation1.png)
 - On your computer, navigate to the 'password-generator' directory. 
-![Screenshot](#)
+![Screenshot](./assets/intallation2.png)
 - Open the 'index.html' file in your browser.
-![Screenshot](#)
+![Screenshot](./assets/intallation3.png)
 
 ## Application Preview
+
+![Screenshot](./assets/appPreview.png)
+
+### Prompts
+When the user clicks the "Generate Password" button, a series of prompts will pop up seeking user input on the password criteria. 
+
+The first prompt will ask how long the password should be, with a minimum of 8 characters and a maximum of 128 characters. 
+![Screenshot](./assets/prompt1.png)
+
+If the user does not choose a number between the range of 8 and 128, the follow alert will pop up and the user will be forced to enter a number within range.
+![Screenshot](./assets/prompt2.png)
+
+When the user chooses a number within range, the following alert will pop up as confirmation.
+![Screenshot](./assets/prompt3.png)
+
+The user will then be asked in a series of prompts whether the password should include uppercase characters, lowercase characters, numeric characters, or special characters. 
+![Screenshot](./assets/prompt4.png)
+
+If the user presses "OK", the character type will be included and the following alert will pop up.
+![Screenshot](./assets/prompt5.png)
+
+If the user presses "CANCEL", the character type will not be included and the following alert will pop up.
+![Screenshot](./assets/prompt6.png)
+
+If the user does not choose at least one type of character, the following alert will pop up and the password generation will be cancelled. 
+![Screenshot](./assets/prompt8.png)
+
+If the user does choose at least one type of character, an alert will pop up confirming the password generation process.
+![Screenshot](./assets/prompt7.png)
+
+Once the password is finished generating, it will appear in the textbox above the generate button.
+![Screenshot](./assets/prompt9.png)
 
 ## Languages Used
 
