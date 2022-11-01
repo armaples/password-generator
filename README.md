@@ -1,8 +1,7 @@
 # Password Generator 
 
 ## Description
-
-
+This project was intended to create a foundation for a basic password generator. The motivation was to create a clean code that would allow the user to choose the criteria they want for a password and generate said password. Even though the user can choose their criteria, there are a few parameters in place to ensure proper functioning of the code. The password is between 8 and 128 characters, and if the user tries to enter a length outside of these parameters, an alert will stop them from continuing to generate the password. The user also must choose at least one character type, or else the password generation will stop. 
 
 ## Table of Contents
 
@@ -77,7 +76,7 @@ Once the password is finished generating, it will appear in the textbox above th
 
 ### MIT License
 
-Copyright (copy) 2022 - Alyssa Maples
+Copyright (copy) 2022 Password Generator - Alyssa Maples
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
